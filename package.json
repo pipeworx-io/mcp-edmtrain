@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-edmtrain",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "EDMtrain MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-62318e19e43e982b0b0e9213ab2d9df47ab36720cb26d85077b247e932609249",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-c9a5d3b06824e81eb09ddcf289987dc6f32515e6bf88a8f44b36779fd81a7353",
+    "sourceCommit": "4fa4c64448be06f4a2ee4cee19f756f3558a7cad"
   }
 }
