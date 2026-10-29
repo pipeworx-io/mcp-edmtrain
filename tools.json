@@ -1,0 +1,60 @@
+[
+  {
+    "name": "locations",
+    "description": "List EDMtrain-supported metro locations (id, city, state, lat/long). Use a location id with the events tool, or filter this list by a city/state keyword. EDMtrain covers North American metros.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Optional filter, e.g. \"Los Angeles\", \"TX\", \"Brooklyn\"."
+        }
+      }
+    }
+  },
+  {
+    "name": "events",
+    "description": "Find upcoming electronic/dance events, concerts and festivals for a region. Specify a region either by latitude+longitude (returns events within ~75 miles) or by location_ids. Optionally filter by date window, name, and festivals-only.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Region center latitude (pair with longitude), e.g. 37.77 for SF."
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Region center longitude (pair with latitude), e.g. -122.42 for SF."
+        },
+        "location_ids": {
+          "type": "string",
+          "description": "Comma-separated EDMtrain location ids (from the locations tool). Alternative to lat/long."
+        },
+        "state": {
+          "type": "string",
+          "description": "Optional 2-letter state filter when using lat/long, e.g. \"CA\"."
+        },
+        "start_date": {
+          "type": "string",
+          "description": "Earliest event date, YYYY-MM-DD."
+        },
+        "end_date": {
+          "type": "string",
+          "description": "Latest event date, YYYY-MM-DD."
+        },
+        "event_name": {
+          "type": "string",
+          "description": "Filter by event/festival name keyword."
+        },
+        "festivals_only": {
+          "type": "boolean",
+          "description": "If true, return only festivals."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max events to return (1-200, default 50)."
+        }
+      }
+    }
+  }
+]
