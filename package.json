@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-edmtrain",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "EDMtrain MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "edmtrain",
     "gatewaySlug": "edmtrain",
-    "sourceHash": "v1-d4946fc6a05a2a0cfe9cf1097441b3d3ba3c154304ef455223dc940a67b91148",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-f169521b08a6ad71d7c8e9c9db095cfbba39c871a63122781860b1d90576b2ae",
+    "sourceCommit": "e707a4bb6209f432984c0a83bf64b3138130db89"
   }
 }
